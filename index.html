@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Scatter</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
-<link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Scatter</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="datepickr.js"></script>
+  <script type="text/javascript" src="manifests.js"></script>
+  <script type="text/javascript" src="requests.js"></script>
+  <link rel="stylesheet" type="text/css" href="datepickr.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-The content of the document......
+
+  <!-- hold the calendar, ride numbers -->
+  <div id="topBar">
+    <div id="calIcon">GO</div>
+    <div id="calArea">
+      <input id='dateSelectFirst' class="datePicker" placeholder="Start Date"/>
+      <input id='dateSelectSecond' class="datePicker" placeholder="End Date"/>
+    </div>
+
+    <div id="counterArea">
+      <div id="totalEvents" class="rideCounter">
+        <div class="count"></div>
+        <div class="label">TOTAL EVENTS</div>
+      </div>
+      <div id="sharedRides" class="rideCounter">
+        <div class="count"></div>
+        <div class="label">SHARED RIDES</div>
+      </div>
+      <div id= "soloRides" class="rideCounter">
+        <div class="count"></div>
+        <div class="label">SOLO RIDES</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contain the chart -->
+  <div id="chart">
+    <div id="leftTimes" class="times"></div>
+    <table id="dotHolder">
+    </table>
+    <div id="rightTimes" class="times"></div>
+    <div id="dayLabels"></div>
+  </div>
 </body>
 
 </html>

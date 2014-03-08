@@ -1,3 +1,106 @@
 body {
+  background-color: #000;
+  color: #eee;
   font-size: 24px;
+}
+
+
+/*
+ *
+ *
+ *  Styling for the top bar
+ *
+ *
+*/
+
+#topBar {
+  height: 100px;
+  width: 100%;
+}
+
+#calIcon {
+  src: url("assets/ionicons.ttf");
+  font-family: "Ionicons";
+  content: "U+f162";
+  color: #fff;
+  float: left;
+  width: 40px;
+  height: 1px;
+}
+
+#calArea {
+  float: left;
+  margin-left: 40px;
+  width: 290px;
+}
+
+.datePicker {
+  src: url("assets/GthaHTFLigIta");
+  font-family: "Gotham HTF Light Italic";
+  float: left;
+  width: 250px;
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  padding: 6px;
+}
+
+.counterArea {
+  float: left;
+  height: 100%;
+}
+
+.rideCounter {
+  position: relative;
+  display: inline-block;
+  margin-left: 60px;
+  height: 100%;
+}
+
+.rideCounter .label {
+  position: relative;
+  bottom: 0;
+}
+
+
+/*
+ *
+ *
+ *  The Chart
+ *
+ *
+*/
+#chart {
+  margin: 0 auto;
+}
+
+#dotHolder {
+  border-collapse:collapse;
+  margin: 0 auto;
+}
+
+#dotHolder td {
+  border: 1px dotted #fff;
+  height: 40px;
+  width: 120px;
+  position: relative;
+}
+
+.dot {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left:-20px;
+}
+
+.dot.shared {
+  background-image: url('assets/dot-pink.png');
+}
+
+.dot.solo {
+  background-image: url('assets/dot-blue.png');
+}
+
+.dot.request {
+  background-image: url('assets/dot-white.png');
 }
